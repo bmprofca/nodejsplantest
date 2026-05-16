@@ -3,7 +3,7 @@ const app = express();
 const PORT = 3000;
 
 app.get("/health", (req, res) => {
-    console.log("Checked at", new Date().toISOString());
+    console.log("Checked at");
     return res.json({
         health: "OK"
     });
